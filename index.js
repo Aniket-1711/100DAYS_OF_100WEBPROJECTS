@@ -15,6 +15,7 @@ const projects = [
   "Drawing Canvas",
   "Nasa Astronomy Picture of the day",
   "World Clock"
+  "Peaceful New Tab Extension"
   // Add more project names as needed
 ];
 
@@ -65,7 +66,11 @@ projects.forEach((name, index) => {
     link = `public/Day 9/index.html`;
   } else if (name === "Nasa Astronomy Picture of the day") {
     link = "https://sabaaa01.github.io/NASA-astronomy-photo-of-the-day/";
-  } else {
+  }
+    else if(name=="Peaceful New Tab Extension"){
+      link="https://peacefulnewtabchromeextension.vercel.app/";
+    }
+  else {
     const folder = `day${String(index + 1).padStart(2, "0")}`;
     link = `public/${folder}/index.html`;
   }
