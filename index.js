@@ -54,7 +54,8 @@ const projects = [
   "Doodle Jump Game",
   "BrainBuzz Quizz Website",
   "Code Editor",
-  "Spotify Clone"
+  "Spotify Clone",
+  "Peaceful New Tab Extension"
 
   // Add more project names as needed
 
@@ -109,7 +110,11 @@ projects.forEach((name, index) => {
     link = "https://sabaaa01.github.io/NASA-astronomy-photo-of-the-day/";
   } else if (name === "BrainBuzz Quizz Website") {
     link = "https://brain-buzz-six.vercel.app/";
-  } else {
+  } 
+  else if(name=="Peaceful New Tab Extension"){
+    link="https://PeacefulNewTabChromeExtension.vercel.app";
+  }
+  else {
     const folder = `day${String(index + 1).padStart(2, "0")}`;
     link = `public/${folder}/index.html`;
   }
