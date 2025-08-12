@@ -67,9 +67,9 @@ projects.forEach((name, index) => {
   } else if (name === "Nasa Astronomy Picture of the day") {
     link = "https://sabaaa01.github.io/NASA-astronomy-photo-of-the-day/";
   }
-    else if(name=="Peaceful New Tab Extension"){
-      link="https://peacefulnewtabchromeextension.vercel.app/";
-    }
+  else if(name=="Peaceful New Tab Extension"){
+    link="https://peacefulnewtabchromeextension.vercel.app/";
+  }
   else {
     const folder = `day${String(index + 1).padStart(2, "0")}`;
     link = `public/${folder}/index.html`;
